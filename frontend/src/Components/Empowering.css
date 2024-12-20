@@ -1,0 +1,51 @@
+
+.empowering-service {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .empower-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .empower-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .empower-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  
+  @media (max-width: 768px) {
+    .carousel-items {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .carousel-item {
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+    }
+  
+    .carousel-btn {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }

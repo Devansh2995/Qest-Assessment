@@ -1,0 +1,11 @@
+{
+  "name": "quest-assessment",
+  "version": "1.0.0",
+  "description": "This is Quest Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devansh Gupta",
+  "license": "ISC"
+}

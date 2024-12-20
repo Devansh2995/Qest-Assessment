@@ -1,0 +1,327 @@
+/* General Styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* Hero Section Styling */
+.hero-section {
+  height: calc(100vh ); /* Adjust for navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* AI Placeholder Container */
+.ai-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.ai-placeholder {
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: normal; /* Changed to normal */
+  border: 1px solid #ddd;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background-color: white;
+  color: #333;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Ensures padding doesn't affect height */
+}
+
+.ai-tag {
+  padding: 0rem 0.5rem;
+  /* font-size: 1.5rem; */
+ /* Changed to normal */
+  border: 1px solid #ddd;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  background-color: white;
+  color: #333;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: -10px; */
+  justify-content: center;
+  /* box-sizing: border-box; */
+  text-align: right;
+  font-weight: bold; /* Bold text for AI RMax */
+  /* width: max-content; Adjusted to visually match */
+}
+
+.rmax {
+  color: #732002;
+}
+
+.ai-placeholder {
+  width: max-content; /* Matches the original input field width */
+  color: #888; /* Placeholder-style text color */
+  text-align: left;
+}
+
+/* Heading and Description */
+h1 {
+  font-size: 3rem;
+  font-weight: bold; /* Changed from bold to normal */
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 .highlight {
+  color: #ff4500;
+}
+
+.description {
+  color: #686767;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  letter-spacing: -0.08rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.get-started,
+.book-demo {
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: normal; /* Changed from bold to normal */
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.get-started {
+  background-color: #ff4500;
+  color: white;
+}
+
+.book-demo {
+  background-color: white;
+  color: #ff4500;
+  border: 2px solid #ff4500;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  gap: 2rem;
+  text-wrap: nowrap;
+  letter-spacing: 0.5px; /* Reduced letter spacing */
+}
+
+.features div {
+  font-size: 1.2rem;
+  padding: 0.8rem 3rem;
+  /* width: 100%; */
+  letter-spacing: -0.08rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+/* Navbar Dropdown Icon */
+.dropdown-icon {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  transition: transform 0.2s;
+}
+
+.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg); /* Add rotation effect on hover */
+}
+
+/* Arrow Icon in Buttons */
+.get-started i {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ai-input-container {
+    flex-direction: column;
+  }
+
+  .ai-input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .features div {
+    width: 100%;
+  }
+}
+
+
+
+/* mid section */
+
+
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  /* padding: 10px 0px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: space-between; */
+  gap: 20px;
+  position: relative; /* Ensure footer is relative for positioning the social icons */
+  align-items: center; /* Align items horizontally */
+}
+.columns{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  /* align-items: center; */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #f0a500;
+}
+
+.copyright{
+  margin-left: 20px;
+  font-size: 14px;
+  position: relative;
+  
+}
+.line{
+  width: 80%;
+  height: 1px;
+  background-color: #808080;
+}
+
+.social-icons {
+  position: relative;
+  gap: 15px;
+}
+.footer-bottom{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons a {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ff4500;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack the copyright and social icons vertically on mobile */
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
